@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entomology Conference sign-up form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="left">
+            <img id="dragonfly" src="./dragonfly1v3.jpg" alt="dragonfly picture">
+            <div class="logo-container">
+                <img src="./odin-lined.png" alt="logo" class="logo">
+                EMLGY-2022
+            </div>
+            <p class="img-author">
+                Photo by <a href="https://unsplash.com/@ricrawfo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Riley Crawford</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </div>
+        <div class="right">
+            <div class="pre-form">
+                <h1>Entomology Conference 2022</h1>
+                <p class="description">We are pleased to inform you, that the registration for this year's edition of EMLGY is now open! Make sure to provide all the necessary information within the form below. Email confirmation is required to participate!
+                </p>
+            </div>
+            <div class="form-container">
+                <form>
+                    <fieldset>
+                        <legend>Personal Data</legend>
+                        <fieldset class="fieldset-no-border">
+                            <div class="cell">
+                                <input type="text" name="first-name" id="first-name" placeholder=" " required>
+                                <label for="first-name">FIRST NAME</label>
+                            </div>
+                            <div class="cell">
+                                <input type="text" name="last-name" id="last-name" placeholder=" " required>
+                                <label for="last-name">LAST NAME</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="fieldset-no-border">
+                            <div class="cell">
+                                <input type="tel" name="phone-number" id="phone-number" placeholder=" " required>
+                                <label for="phone-number">PHONE NUMBER</label>
+                            </div>
+                            <div class="cell">
+                                <input type="email" name="email" id="email" placeholder=" " required>
+                                <label for="email">EMAIL</label>
+                            </div>
+                        </fieldset>
+                    </fieldset>
+                    <fieldset class="pwd-fieldset">
+                        <legend>Password</legend>
+                        <fieldset class="fieldset-no-border">
+                            <div class="cell">
+                                <input type="password" name="password" id="pwd" autocomplete="off" placeholder=" " pattern="^(?=^.{8,20}$)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).*$" required>
+                                <label for="pwd">PASSWORD</label>
+                            </div>
+                            <div class="cell">
+                                <input type="password" name="password-confirm" id="pwd-confirm" autocomplete="off" placeholder=" " required>
+                                <label for="pwd-confirm">CONFIRM PASSWORD</label>
+                            </div>
+                            <p class="pwd-match">Passwords have to match!</p>
+                            <!-- <div class="pwd-validity">
+                                <p>must be at least 5 characters</p>
+                                <p>must containt an uppercase letter</p>
+                                <p>must contain a number</p>
+                                <p>must contain 1 special symbol</p>
+                            </div> -->
+                        </fieldset>
+                    </fieldset>
+                    <button type="submit" class="submit-btn">Register now!</button>
+                </form>
+            </div>
+            <div class="post-form">
+                <p class="log-in">Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
