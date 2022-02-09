@@ -13,11 +13,13 @@
         <div class="left">
             <img id="dragonfly" src="./dragonfly1v3.jpg" alt="dragonfly picture">
             <div class="logo-container">
-                <img src="./odin-lined.png" alt="logo" class="logo">
+                <img src="./insects2.png" alt="logo" class="logo">
                 EMLGY-2022
             </div>
             <p class="img-author">
                 Photo by <a href="https://unsplash.com/@ricrawfo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Riley Crawford</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                <br>
+                <a href="https://www.flaticon.com/free-icons/insects" title="insects icons">Insects icons created by Freepik - Flaticon</a>
             </p>
         </div>
         <div class="right">
@@ -54,21 +56,31 @@
                     <fieldset class="pwd-fieldset">
                         <legend>Password</legend>
                         <fieldset class="fieldset-no-border">
-                            <div class="cell">
-                                <input type="password" name="password" id="pwd" autocomplete="off" placeholder=" " pattern="^(?=^.{8,20}$)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).*$" required>
-                                <label for="pwd">PASSWORD</label>
+                            <div class="pwd-cells">
+                                <div class="cell">
+                                    <input type="password" name="password" id="pwd" autocomplete="off" placeholder=" " pattern="^(?=^.{8,20}$)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).*$" required>
+                                    <label for="pwd">PASSWORD</label>
+                                </div>
+                                <div class="cell">
+                                    <input type="password" name="password-confirm" id="pwd-confirm" autocomplete="off" placeholder=" " required>
+                                    <label for="pwd-confirm">CONFIRM PASSWORD</label>
+                                </div>
                             </div>
-                            <div class="cell">
-                                <input type="password" name="password-confirm" id="pwd-confirm" autocomplete="off" placeholder=" " required>
-                                <label for="pwd-confirm">CONFIRM PASSWORD</label>
+                            <p class="pwd-match invisible">Passwords have to match!</p>
+                            <div class="pwd-container">
+                                <ul>
+                                    <li class="cross pwd-li">must be between 8 and 20 characters</li>
+                                    <li class="cross pwd-li">must containt an uppercase letter</li>
+                                    <li class="cross pwd-li">must contain a number</li>
+                                    <li class="cross pwd-li">must contain 1 special symbol</li>
+                                </ul>
+                                <div class="pwd-strength">
+                                    <span class="bar bar-1"></span>
+                                    <span class="bar bar-2"></span>
+                                    <span class="bar bar-3"></span>
+                                    <span class="bar bar-4"></span>
+                                </div>
                             </div>
-                            <p class="pwd-match">Passwords have to match!</p>
-                            <!-- <div class="pwd-validity">
-                                <p>must be at least 5 characters</p>
-                                <p>must containt an uppercase letter</p>
-                                <p>must contain a number</p>
-                                <p>must contain 1 special symbol</p>
-                            </div> -->
                         </fieldset>
                     </fieldset>
                     <button type="submit" class="submit-btn">Register now!</button>
